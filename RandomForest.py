@@ -6,12 +6,9 @@ __GitHub__ = https://github.com/DarpitPatel/
 '''
 import numpy as np
 import pandas as pd 
-from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
-from sklearn.metrics import confusion_matrix
 import pickle
 from sklearn import tree
 
@@ -40,5 +37,3 @@ with open(filename, 'wb') as fid:
 
 #Make point prediction for a single input
 print("Point Prediction : ", trained_model.predict([[78,2]]) )
-
-
